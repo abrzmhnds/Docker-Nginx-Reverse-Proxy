@@ -1,8 +1,10 @@
 ###DOCKER NGINX REVERSE PROXY
 
-Add new conf for new host
+Add new conf
 
 ```
+vim conf/newconfig.conf
+
 server {
     listen              80;
     listen              [::]:80;
@@ -19,5 +21,6 @@ server {
 Add new servername in /etc/hosts
 ```
 vim /etc/hosts
+
 your-ip yourservername.com
 ```
